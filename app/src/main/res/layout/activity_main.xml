@@ -42,6 +42,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="C"
+            android:tag = "clear"
+            android:layout_marginHorizontal="@dimen/mx_10"
             android:textSize="@dimen/buttonIconSize" />
 
         <Button
@@ -50,6 +52,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="%"
+            android:tag = "percent"
+            android:layout_marginHorizontal="@dimen/mx_10"
             android:textSize="@dimen/buttonIconSize" />
     </LinearLayout>
 
