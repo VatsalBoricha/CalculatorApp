@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3">
+        app:layout_constraintVertical_bias="0.2">
 
         <TextView
             android:id="@+id/resultTextView"
@@ -152,7 +152,8 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/thirdRow">
+        app:layout_constraintTop_toBottomOf="@+id/thirdRow"
+        app:layout_constraintBottom_toTopOf="@id/fifthRow">
 
         <Button
             android:id="@+id/fourButton"
@@ -194,6 +195,124 @@
             android:layout_weight="1"
             android:text="@string/subtract"
             android:tag = "subtract"
+            android:fontFamily="@font/fa_solid_900"
+            android:layout_marginHorizontal="@dimen/mx_10"
+            android:textSize="@dimen/buttonIconSize" />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fifthRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourthRow"
+        app:layout_constraintBottom_toTopOf="@id/sixthRow">
+
+        <Button
+            android:id="@+id/oneButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/one"
+            android:tag = "1"
+            android:fontFamily="@font/fa_solid_900"
+            android:layout_marginHorizontal="@dimen/mx_10"
+            android:textSize="@dimen/buttonIconSize" />
+
+        <Button
+            android:id="@+id/twoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/two"
+            android:tag = "2"
+            android:fontFamily="@font/fa_solid_900"
+            android:layout_marginHorizontal="@dimen/mx_10"
+            android:textSize="@dimen/buttonIconSize" />
+
+        <Button
+            android:id="@+id/threeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/three"
+            android:tag = "3"
+            android:fontFamily="@font/fa_solid_900"
+            android:layout_marginHorizontal="@dimen/mx_10"
+            android:textSize="@dimen/buttonIconSize" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/add"
+            android:tag = "add"
+            android:fontFamily="@font/fa_solid_900"
+            android:layout_marginHorizontal="@dimen/mx_10"
+            android:textSize="@dimen/buttonIconSize" />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sixthRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourthRow"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/plus_minusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/plus_minus"
+            android:tag = "plus_minus"
+            android:fontFamily="@font/fa_solid_900"
+            android:layout_marginHorizontal="@dimen/mx_10"
+            android:textSize="@dimen/buttonIconSize" />
+
+        <Button
+            android:id="@+id/zeroButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/zero"
+            android:tag = "0"
+            android:fontFamily="@font/fa_solid_900"
+            android:layout_marginHorizontal="@dimen/mx_10"
+            android:textSize="@dimen/buttonIconSize" />
+
+        <Button
+            android:id="@+id/decimalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="."
+            android:tag = "."
+            android:fontFamily="@font/fa_solid_900"
+            android:layout_marginHorizontal="@dimen/mx_10"
+            android:textSize="@dimen/buttonIconSize" />
+
+        <Button
+            android:id="@+id/equalsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/equals"
+            android:tag = "equals"
             android:fontFamily="@font/fa_solid_900"
             android:layout_marginHorizontal="@dimen/mx_10"
             android:textSize="@dimen/buttonIconSize" />
