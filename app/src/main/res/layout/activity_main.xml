@@ -34,7 +34,8 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/firstRow">
+        app:layout_constraintTop_toBottomOf="@+id/firstRow"
+        app:layout_constraintBottom_toTopOf="@id/thirdRow">
 
         <Button
             android:id="@+id/clearButton"
@@ -76,6 +77,64 @@
             android:layout_weight="1"
             android:text="@string/divide"
             android:tag = "divide"
+            android:fontFamily="@font/fa_solid_900"
+            android:layout_marginHorizontal="@dimen/mx_10"
+            android:textSize="@dimen/buttonIconSize" />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thirdRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondRow">
+
+        <Button
+            android:id="@+id/sevenButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/seven"
+            android:tag = "7"
+            android:fontFamily="@font/fa_solid_900"
+            android:layout_marginHorizontal="@dimen/mx_10"
+            android:textSize="@dimen/buttonIconSize" />
+
+        <Button
+            android:id="@+id/eightButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/eight"
+            android:tag = "8"
+            android:fontFamily="@font/fa_solid_900"
+            android:layout_marginHorizontal="@dimen/mx_10"
+            android:textSize="@dimen/buttonIconSize" />
+
+        <Button
+            android:id="@+id/nineButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/nine"
+            android:tag = "9"
+            android:fontFamily="@font/fa_solid_900"
+            android:layout_marginHorizontal="@dimen/mx_10"
+            android:textSize="@dimen/buttonIconSize" />
+
+        <Button
+            android:id="@+id/multiplyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/multiply"
+            android:tag = "multiply"
             android:fontFamily="@font/fa_solid_900"
             android:layout_marginHorizontal="@dimen/mx_10"
             android:textSize="@dimen/buttonIconSize" />
