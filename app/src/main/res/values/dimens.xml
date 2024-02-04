@@ -3,5 +3,11 @@
     <dimen name="resulTextViewSize">70sp</dimen>
     <dimen name="px_10">10dp</dimen>
     <dimen name="mx_10">10dp</dimen>
-    <dimen name="buttonIconSize">48sp</dimen>
+    <dimen name="buttonIconSize">40sp</dimen>
+    <dimen name="roundButtonHeight">85dp</dimen>
+    <dimen name="roundButtonWidth">50dp</dimen>
+    <dimen name="squareButtonWidth">55dp</dimen>
+    <dimen name="squareButtonHeight">80dp</dimen>
+    <dimen name="squareButtonCornerRadius">20dp</dimen>
+    <dimen name="roundButtonCornerRadius">40dp</dimen>
 </resources>

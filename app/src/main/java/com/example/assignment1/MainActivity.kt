@@ -1,4 +1,10 @@
 package com.example.assignment1
+/**
+ * Name: Vatsal boricha
+ * Student ID: 200528698
+ * Date: 4 Feb, 2024
+ * App Name: calculator
+ * Version: 1.0 */
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundDisplay"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -32,56 +33,66 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/thirdRow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/firstRow"
-        app:layout_constraintBottom_toTopOf="@id/thirdRow">
+        app:layout_constraintTop_toBottomOf="@+id/firstRow">
 
         <Button
             android:id="@+id/clearButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/clear"
-            android:tag = "clear"
-            android:fontFamily="@font/fa_solid_900"
+            android:layout_width="@dimen/roundButtonWidth"
+            android:layout_height="@dimen/roundButtonHeight"
             android:layout_marginHorizontal="@dimen/mx_10"
-            android:textSize="@dimen/buttonIconSize" />
+            android:layout_weight="1"
+            android:backgroundTint="@color/backgroundOpButtons"
+            android:fontFamily="@font/fa_solid_900"
+            android:tag="clear"
+            android:text="@string/clear"
+            android:textColor="@color/textColorOpButtons"
+            android:textSize="@dimen/buttonIconSize"
+            app:cornerRadius="@dimen/roundButtonCornerRadius" />
 
         <Button
             android:id="@+id/percentButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/percent"
-            android:tag = "percent"
-            android:fontFamily="@font/fa_solid_900"
+            android:layout_width="@dimen/roundButtonWidth"
+            android:layout_height="@dimen/roundButtonHeight"
             android:layout_marginHorizontal="@dimen/mx_10"
-            android:textSize="@dimen/buttonIconSize" />
+            android:layout_weight="1"
+            android:backgroundTint="@color/backgroundOpButtons"
+            android:fontFamily="@font/fa_solid_900"
+            android:tag="percent"
+            android:text="@string/percent"
+            android:textColor="@color/textColorOpButtons"
+            android:textSize="@dimen/buttonIconSize"
+            app:cornerRadius="@dimen/roundButtonCornerRadius" />
 
         <Button
             android:id="@+id/backspaceButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/back_space"
-            android:tag = "backspace"
-            android:fontFamily="@font/fa_solid_900"
+            android:layout_width="@dimen/roundButtonWidth"
+            android:layout_height="@dimen/roundButtonHeight"
             android:layout_marginHorizontal="@dimen/mx_10"
-            android:textSize="@dimen/buttonIconSize" />
+            android:layout_weight="1"
+            android:backgroundTint="@color/backgroundOpButtons"
+            android:fontFamily="@font/fa_solid_900"
+            android:tag="backspace"
+            android:text="@string/back_space"
+            android:textColor="@color/textColorOpButtons"
+            android:textSize="@dimen/buttonIconSize"
+            app:cornerRadius="@dimen/roundButtonCornerRadius" />
 
         <Button
             android:id="@+id/divideButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/divide"
-            android:tag = "divide"
-            android:fontFamily="@font/fa_solid_900"
+            android:layout_width="@dimen/roundButtonWidth"
+            android:layout_height="@dimen/roundButtonHeight"
             android:layout_marginHorizontal="@dimen/mx_10"
-            android:textSize="@dimen/buttonIconSize" />
-
-
+            android:layout_weight="1"
+            android:backgroundTint="@color/backgroundOpButtons"
+            android:fontFamily="@font/fa_solid_900"
+            android:tag="divide"
+            android:text="@string/divide"
+            android:textColor="@color/textColorOpButtons"
+            android:textSize="@dimen/buttonIconSize"
+            app:cornerRadius="@dimen/roundButtonCornerRadius" />
 
 
     </LinearLayout>
@@ -91,56 +102,66 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/fourthRow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/secondRow"
-        app:layout_constraintBottom_toTopOf="@id/fourthRow">
+        app:layout_constraintTop_toBottomOf="@+id/secondRow">
 
         <Button
             android:id="@+id/sevenButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/seven"
-            android:tag = "7"
-            android:fontFamily="@font/fa_solid_900"
+            android:layout_width="@dimen/squareButtonWidth"
+            android:layout_height="@dimen/squareButtonHeight"
             android:layout_marginHorizontal="@dimen/mx_10"
-            android:textSize="@dimen/buttonIconSize" />
+            android:layout_weight="1"
+            android:backgroundTint="@color/backgroundNumButtons"
+            android:fontFamily="@font/fa_solid_900"
+            android:tag="7"
+            android:text="@string/seven"
+            android:textColor="@color/textColorNumButtons"
+            android:textSize="@dimen/buttonIconSize"
+            app:cornerRadius="@dimen/squareButtonCornerRadius" />
 
         <Button
             android:id="@+id/eightButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/eight"
-            android:tag = "8"
-            android:fontFamily="@font/fa_solid_900"
+            android:layout_width="@dimen/squareButtonWidth"
+            android:layout_height="@dimen/squareButtonHeight"
             android:layout_marginHorizontal="@dimen/mx_10"
-            android:textSize="@dimen/buttonIconSize" />
+            android:layout_weight="1"
+            android:backgroundTint="@color/backgroundNumButtons"
+            android:fontFamily="@font/fa_solid_900"
+            android:tag="8"
+            android:text="@string/eight"
+            android:textColor="@color/textColorNumButtons"
+            android:textSize="@dimen/buttonIconSize"
+            app:cornerRadius="@dimen/squareButtonCornerRadius" />
 
         <Button
             android:id="@+id/nineButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/nine"
-            android:tag = "9"
-            android:fontFamily="@font/fa_solid_900"
+            android:layout_width="@dimen/squareButtonWidth"
+            android:layout_height="@dimen/squareButtonHeight"
             android:layout_marginHorizontal="@dimen/mx_10"
-            android:textSize="@dimen/buttonIconSize" />
+            android:layout_weight="1"
+            android:backgroundTint="@color/backgroundNumButtons"
+            android:fontFamily="@font/fa_solid_900"
+            android:tag="9"
+            android:text="@string/nine"
+            android:textColor="@color/textColorNumButtons"
+            android:textSize="@dimen/buttonIconSize"
+            app:cornerRadius="@dimen/squareButtonCornerRadius" />
 
         <Button
             android:id="@+id/multiplyButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/multiply"
-            android:tag = "multiply"
-            android:fontFamily="@font/fa_solid_900"
+            android:layout_width="@dimen/roundButtonWidth"
+            android:layout_height="@dimen/roundButtonHeight"
             android:layout_marginHorizontal="@dimen/mx_10"
-            android:textSize="@dimen/buttonIconSize" />
-
-
+            android:layout_weight="1"
+            android:backgroundTint="@color/backgroundOpButtons"
+            android:fontFamily="@font/fa_solid_900"
+            android:tag="multiply"
+            android:text="@string/multiply"
+            android:textColor="@color/textColorOpButtons"
+            android:textSize="@dimen/buttonIconSize"
+            app:cornerRadius="@dimen/roundButtonCornerRadius" />
 
 
     </LinearLayout>
@@ -150,56 +171,66 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/fifthRow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/thirdRow"
-        app:layout_constraintBottom_toTopOf="@id/fifthRow">
+        app:layout_constraintTop_toBottomOf="@+id/thirdRow">
 
         <Button
             android:id="@+id/fourButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/four"
-            android:tag = "4"
-            android:fontFamily="@font/fa_solid_900"
+            android:layout_width="@dimen/squareButtonWidth"
+            android:layout_height="@dimen/squareButtonHeight"
             android:layout_marginHorizontal="@dimen/mx_10"
-            android:textSize="@dimen/buttonIconSize" />
+            android:layout_weight="1"
+            android:backgroundTint="@color/backgroundNumButtons"
+            android:fontFamily="@font/fa_solid_900"
+            android:tag="4"
+            android:text="@string/four"
+            android:textColor="@color/textColorNumButtons"
+            android:textSize="@dimen/buttonIconSize"
+            app:cornerRadius="@dimen/squareButtonCornerRadius" />
 
         <Button
             android:id="@+id/fiveButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/five"
-            android:tag = "5"
-            android:fontFamily="@font/fa_solid_900"
+            android:layout_width="@dimen/squareButtonWidth"
+            android:layout_height="@dimen/squareButtonHeight"
             android:layout_marginHorizontal="@dimen/mx_10"
-            android:textSize="@dimen/buttonIconSize" />
+            android:layout_weight="1"
+            android:backgroundTint="@color/backgroundNumButtons"
+            android:fontFamily="@font/fa_solid_900"
+            android:tag="5"
+            android:text="@string/five"
+            android:textColor="@color/textColorNumButtons"
+            android:textSize="@dimen/buttonIconSize"
+            app:cornerRadius="@dimen/squareButtonCornerRadius" />
 
         <Button
             android:id="@+id/sixButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/six"
-            android:tag = "6"
-            android:fontFamily="@font/fa_solid_900"
+            android:layout_width="@dimen/squareButtonWidth"
+            android:layout_height="@dimen/squareButtonHeight"
             android:layout_marginHorizontal="@dimen/mx_10"
-            android:textSize="@dimen/buttonIconSize" />
+            android:layout_weight="1"
+            android:backgroundTint="@color/backgroundNumButtons"
+            android:fontFamily="@font/fa_solid_900"
+            android:tag="6"
+            android:text="@string/six"
+            android:textColor="@color/textColorNumButtons"
+            android:textSize="@dimen/buttonIconSize"
+            app:cornerRadius="@dimen/squareButtonCornerRadius" />
 
         <Button
             android:id="@+id/subtractButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/subtract"
-            android:tag = "subtract"
-            android:fontFamily="@font/fa_solid_900"
+            android:layout_width="@dimen/roundButtonWidth"
+            android:layout_height="@dimen/roundButtonHeight"
             android:layout_marginHorizontal="@dimen/mx_10"
-            android:textSize="@dimen/buttonIconSize" />
-
-
+            android:layout_weight="1"
+            android:backgroundTint="@color/backgroundOpButtons"
+            android:fontFamily="@font/fa_solid_900"
+            android:tag="subtract"
+            android:text="@string/subtract"
+            android:textColor="@color/textColorOpButtons"
+            android:textSize="@dimen/buttonIconSize"
+            app:cornerRadius="@dimen/roundButtonCornerRadius" />
 
 
     </LinearLayout>
@@ -209,56 +240,66 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/sixthRow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fourthRow"
-        app:layout_constraintBottom_toTopOf="@id/sixthRow">
+        app:layout_constraintTop_toBottomOf="@+id/fourthRow">
 
         <Button
             android:id="@+id/oneButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/one"
-            android:tag = "1"
-            android:fontFamily="@font/fa_solid_900"
+            android:layout_width="@dimen/squareButtonWidth"
+            android:layout_height="@dimen/squareButtonHeight"
             android:layout_marginHorizontal="@dimen/mx_10"
-            android:textSize="@dimen/buttonIconSize" />
+            android:layout_weight="1"
+            android:backgroundTint="@color/backgroundNumButtons"
+            android:fontFamily="@font/fa_solid_900"
+            android:tag="1"
+            android:text="@string/one"
+            android:textColor="@color/textColorNumButtons"
+            android:textSize="@dimen/buttonIconSize"
+            app:cornerRadius="@dimen/squareButtonCornerRadius" />
 
         <Button
             android:id="@+id/twoButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/two"
-            android:tag = "2"
-            android:fontFamily="@font/fa_solid_900"
+            android:layout_width="@dimen/squareButtonWidth"
+            android:layout_height="@dimen/squareButtonHeight"
             android:layout_marginHorizontal="@dimen/mx_10"
-            android:textSize="@dimen/buttonIconSize" />
+            android:layout_weight="1"
+            android:backgroundTint="@color/backgroundNumButtons"
+            android:fontFamily="@font/fa_solid_900"
+            android:tag="2"
+            android:text="@string/two"
+            android:textColor="@color/textColorNumButtons"
+            android:textSize="@dimen/buttonIconSize"
+            app:cornerRadius="@dimen/squareButtonCornerRadius" />
 
         <Button
             android:id="@+id/threeButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/three"
-            android:tag = "3"
-            android:fontFamily="@font/fa_solid_900"
+            android:layout_width="@dimen/squareButtonWidth"
+            android:layout_height="@dimen/squareButtonHeight"
             android:layout_marginHorizontal="@dimen/mx_10"
-            android:textSize="@dimen/buttonIconSize" />
+            android:layout_weight="1"
+            android:backgroundTint="@color/backgroundNumButtons"
+            android:fontFamily="@font/fa_solid_900"
+            android:tag="3"
+            android:text="@string/three"
+            android:textColor="@color/textColorNumButtons"
+            android:textSize="@dimen/buttonIconSize"
+            app:cornerRadius="@dimen/squareButtonCornerRadius" />
 
         <Button
             android:id="@+id/addButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/add"
-            android:tag = "add"
-            android:fontFamily="@font/fa_solid_900"
+            android:layout_width="@dimen/roundButtonWidth"
+            android:layout_height="@dimen/roundButtonHeight"
             android:layout_marginHorizontal="@dimen/mx_10"
-            android:textSize="@dimen/buttonIconSize" />
-
-
+            android:layout_weight="1"
+            android:backgroundTint="@color/backgroundOpButtons"
+            android:fontFamily="@font/fa_solid_900"
+            android:tag="add"
+            android:text="@string/add"
+            android:textColor="@color/textColorOpButtons"
+            android:textSize="@dimen/buttonIconSize"
+            app:cornerRadius="@dimen/roundButtonCornerRadius" />
 
 
     </LinearLayout>
@@ -268,56 +309,66 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fourthRow"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/fifthRow">
 
         <Button
             android:id="@+id/plus_minusButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/plus_minus"
-            android:tag = "plus_minus"
-            android:fontFamily="@font/fa_solid_900"
+            android:layout_width="@dimen/squareButtonWidth"
+            android:layout_height="@dimen/squareButtonHeight"
             android:layout_marginHorizontal="@dimen/mx_10"
-            android:textSize="@dimen/buttonIconSize" />
+            android:layout_weight="1"
+            android:backgroundTint="@color/backgroundOpButtons"
+            android:fontFamily="@font/fa_solid_900"
+            android:tag="plus_minus"
+            android:text="@string/plus_minus"
+            android:textColor="@color/textColorOpButtons"
+            android:textSize="@dimen/buttonIconSize"
+            app:cornerRadius="@dimen/squareButtonCornerRadius" />
 
         <Button
             android:id="@+id/zeroButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/zero"
-            android:tag = "0"
-            android:fontFamily="@font/fa_solid_900"
+            android:layout_width="@dimen/squareButtonWidth"
+            android:layout_height="@dimen/squareButtonHeight"
             android:layout_marginHorizontal="@dimen/mx_10"
-            android:textSize="@dimen/buttonIconSize" />
+            android:layout_weight="1"
+            android:backgroundTint="@color/backgroundNumButtons"
+            android:fontFamily="@font/fa_solid_900"
+            android:tag="0"
+            android:text="@string/zero"
+            android:textColor="@color/textColorNumButtons"
+            android:textSize="@dimen/buttonIconSize"
+            app:cornerRadius="@dimen/squareButtonCornerRadius" />
 
         <Button
             android:id="@+id/decimalButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="."
-            android:tag = "."
-            android:fontFamily="@font/fa_solid_900"
+            android:layout_width="@dimen/squareButtonWidth"
+            android:layout_height="@dimen/squareButtonHeight"
             android:layout_marginHorizontal="@dimen/mx_10"
-            android:textSize="@dimen/buttonIconSize" />
+            android:layout_weight="1"
+            android:backgroundTint="@color/backgroundNumButtons"
+            android:fontFamily="@font/fa_solid_900"
+            android:tag="."
+            android:text="."
+            android:textColor="@color/textColorNumButtons"
+            android:textSize="@dimen/buttonIconSize"
+            app:cornerRadius="@dimen/squareButtonCornerRadius" />
 
         <Button
             android:id="@+id/equalsButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/equals"
-            android:tag = "equals"
-            android:fontFamily="@font/fa_solid_900"
+            android:layout_width="@dimen/roundButtonWidth"
+            android:layout_height="@dimen/roundButtonHeight"
             android:layout_marginHorizontal="@dimen/mx_10"
-            android:textSize="@dimen/buttonIconSize" />
-
-
+            android:layout_weight="1"
+            android:backgroundTint="@color/backgroundOpButtons"
+            android:fontFamily="@font/fa_solid_900"
+            android:tag="equals"
+            android:text="@string/equals"
+            android:textColor="@color/textColorOpButtons"
+            android:textSize="@dimen/buttonIconSize"
+            app:cornerRadius="@dimen/roundButtonCornerRadius" />
 
 
     </LinearLayout>
