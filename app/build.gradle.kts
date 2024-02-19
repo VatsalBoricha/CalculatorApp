@@ -4,11 +4,14 @@ plugins {
 }
 
 android {
-    namespace = "com.example.assignment1"
+    namespace = "com.example.assignment2"
     compileSdk = 34
 
+    buildFeatures{
+        viewBinding = true
+    }
     defaultConfig {
-        applicationId = "com.example.assignment1"
+        applicationId = "com.example.assignment2"
         minSdk = 21
         targetSdk = 34
         versionCode = 1
@@ -16,6 +19,7 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
+
 
     buildTypes {
         release {
