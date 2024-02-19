@@ -4,7 +4,7 @@ package com.example.assignment2
  * Student ID: 200528698
  * Date: 19  Feb, 2024
  * App Name: calculator
- * Version: v1.10 */
+ * Version: v2.0 */
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
